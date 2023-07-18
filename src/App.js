@@ -1,61 +1,64 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.css";
+import "./index.css";
 import "./Saly-10.png";
+
 function App() {
   return (
-    <div class="main">
-      <nav id="nav" class="navbar navbar-dark navbar-expand-lg">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <body class="font-[Montserrat] text-white bg-[#0F141C] w-full">
+      <div
+        id="nav"
+        class="hidden md:flex m-auto p-8 text-xl items-center justify-end gap-16 w-full "
+      >
+        <a
+          href="#about"
+          class="text-white/60 hover:text-white transition-all ease-in-out duration-500 p-4"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Resume <span class="sr-only"></span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Projects
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                About
-              </a>
-            </li>
-            <li class="nav-item">
-              <button class="btn btn-warning" href="#">
-                Contact Me
-              </button>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div id="home-content" class="row">
-        <div id="home-page-title" class="col-8">
-          <h1 id="hi"> Hi! I am </h1>
-          <h1 id="name">Shibin</h1>
-        </div>
-        <div class="col-4">
+          About
+        </a>
+        <a
+          href="SHIBIN_T A.pdf"
+          target="_blank"
+          class="text-white/60 hover:text-white transition-all ease-in-out duration-500 p-4"
+        >
+          Resume
+        </a>
+        <a
+          href="#projects"
+          class="text-white/60 hover:text-white transition-all ease-in-out duration-500 p-4"
+        >
+          Projects
+        </a>
+        <a
+          href="#contact"
+          class="text-white/60 hover:text-white transition-all ease-in-out duration-500 p-4"
+        >
+          Contact
+        </a>
+      </div>
+      <div class="w-full" id="home">
+        <div class="m-auto w-full md:w-[70%] md:flex-row justify-center items-center gap-16 flex flex-col-reverse  mt-[5%]">
+          <div>
+            <div class="flex items-end justify-center">
+              <div>
+                <h1 class="text-[2rem] md:text-[3rem]  grad text font-bold">
+                  Hi I am
+                </h1>
+                <h2 class="text-[4rem] md:text-[5rem] -mt-6 grad2 font-bold">
+                  Shibin
+                </h2>
+              </div>
+            </div>
+            <p class=" text-md md:text-lg text-slate-500 text-left">
+              Dev & Tech Enthusiast
+            </p>
+          </div>
           <img
-            id="home-page-logo"
+            class="w-[20rem] rounded-full grayscale hover:filter-none transition-all duration-500 ease-in-out"
             src={require("./Saly-10.png")}
-            class="img-fluid"
-            alt="Responsive image"
           ></img>
         </div>
       </div>
-    </div>
+    </body>
   );
 }
 
