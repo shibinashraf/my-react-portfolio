@@ -1,1 +1,16 @@
-@import url('https://fonts.googleapis.com/');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+.gradient-dark{
+    height: 100vh;
+    background: radial-gradient(201.22% 121.76% at 3.71% 10.34%, #000 21.51%, #000 58.42%, #139979 100%);
+}
+.font-style{
+    font-family: 'Josefin Sans';
+}
+@layer components {
+    .btn-primary {
+      @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    }
+  }

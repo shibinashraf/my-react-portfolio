@@ -1,61 +1,35 @@
 import "./App.css";
 import "./index.css";
-import "./Saly-10.png";
+import logo from "./Saly-10.png";
 
 function App() {
   return (
-    <body class="font-[Montserrat] text-white bg-[#0F141C] w-full">
-      <div
-        id="nav"
-        class="hidden md:flex m-auto p-8 text-xl items-center justify-end gap-16 w-full "
-      >
-        <a
-          href="#about"
-          class="text-white/60 hover:text-white transition-all ease-in-out duration-500 p-4"
-        >
-          About
-        </a>
-        <a
-          href="SHIBIN_T A.pdf"
-          target="_blank"
-          class="text-white/60 hover:text-white transition-all ease-in-out duration-500 p-4"
-        >
-          Resume
-        </a>
-        <a
-          href="#projects"
-          class="text-white/60 hover:text-white transition-all ease-in-out duration-500 p-4"
-        >
-          Projects
-        </a>
-        <a
-          href="#contact"
-          class="text-white/60 hover:text-white transition-all ease-in-out duration-500 p-4"
-        >
-          Contact
-        </a>
-      </div>
-      <div class="w-full" id="home">
-        <div class="m-auto w-full md:w-[70%] md:flex-row justify-center items-center gap-16 flex flex-col-reverse  mt-[5%]">
-          <div>
-            <div class="flex items-end justify-center">
-              <div>
-                <h1 class="text-[2rem] md:text-[3rem]  grad text font-bold">
-                  Hi I am
-                </h1>
-                <h2 class="text-[4rem] md:text-[5rem] -mt-6 grad2 font-bold">
-                  Shibin
-                </h2>
-              </div>
-            </div>
-            <p class=" text-md md:text-lg text-slate-500 text-left">
-              Dev & Tech Enthusiast
-            </p>
+    <body class="gradient-dark">
+      <ul class="font-style flex flex-row-reverse	items-center gap-x-12 py-8 px-12 text-slate-50	text-2xl ">
+        <li>
+          <button class="py-2 px-4 bg-yellow-500 text-white font-semibold rounded-2xl shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+            Contact Me
+          </button>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#resume">Resume</a>
+        </li>
+      </ul>
+      <div class="flex flex-row">
+        <div class="basis-3/4 items-center mx-40 my-40">
+          <div class="flex-column">
+            <h1 class="text-green-300 text-6xl">Hi! I am</h1>
+            <h1 class="text-slate-300 text-8xl">Shibin</h1>
           </div>
-          <img
-            class="w-[20rem] rounded-full grayscale hover:filter-none transition-all duration-500 ease-in-out"
-            src={require("./Saly-10.png")}
-          ></img>
+        </div>
+        <div class="basis-1/2 items-center mx-40 my-30">
+          <img src={logo} alt="Logo" />;
         </div>
       </div>
     </body>
